@@ -10,3 +10,4 @@ illness$sex[female] <- 'Female'
 male <- which(illness$sex == "1")
 illness$sex[male] <- 'Male'
 illness$sex
+illness <- illness[which(!is.na(illness$onsettime)),]
