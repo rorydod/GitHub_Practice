@@ -1,2 +1,5 @@
-##New file
-library(readr)
+illness <- read.csv("https://raw.githubusercontent.com/ICI3D/RTutorials/master/OswegoTutorial.csv")
+head(illness)
+class(illness$age)
+illness$age <- as.numeric(illness$age)
+class(illness$age)
